@@ -1,0 +1,15 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.bankai.assistant",
+      "sha256_cert_fingerprints": [
+        "AC:5E:B2:D0:15:8E:CC:B5:69:63:D7:9D:CE:D1:02:52:D7:EB:9E:3E:15:FE:FE:19:77:09:D5:5F:E5:BB:D9:A4"
+      ]
+    }
+  }
+]

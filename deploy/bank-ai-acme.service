@@ -1,0 +1,12 @@
+[Unit]
+Description=Renew Bank AI domain TLS certificate through DNS-01
+Wants=network-online.target
+After=network-online.target docker.service
+
+[Service]
+Type=oneshot
+WorkingDirectory=/opt/bank-ai
+EnvironmentFile=/opt/bank-ai/dns-api.env
+ExecStart=/opt/bank-ai/acme/acme.sh --cron --home /opt/bank-ai/acme --config-home /opt/bank-ai/acme-dns
+ExecStartPost=/usr/bin/openssl x509 -in /opt/bank-ai/tls/domain/fullchain.pem -checkend 172800 -noout
+UMask=0077

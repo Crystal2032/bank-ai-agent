@@ -1,0 +1,5 @@
+# Separate workspace root so frontend installs never touch the backend lockfile.
+packages:
+  - "."
+allowBuilds:
+  esbuild: true

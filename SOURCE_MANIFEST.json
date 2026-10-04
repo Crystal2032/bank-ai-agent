@@ -1,0 +1,794 @@
+{
+  "project": "Bank AI Agent",
+  "snapshotDate": "2026-10-04",
+  "androidVersion": "1.0.5 (versionCode 6)",
+  "sourceFiles": 157,
+  "manifestScope": "All source files except SOURCE_MANIFEST.json itself",
+  "files": [
+    {
+      "path": ".dockerignore",
+      "bytes": 82,
+      "sha256": "e3e42cb896e38adb80c58108e3c9c53d712a33397d7cb0f371d2fb91ba14511c"
+    },
+    {
+      "path": ".env.example",
+      "bytes": 900,
+      "sha256": "936893790a0c8a6fe389e8af688539444c84016428b38df73a99f5874883aa15"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 791,
+      "sha256": "61976e8dc58d2ff5b2fab37b9bb7624549c63bd0fa365210bca88b5c32ffc93f"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 4078,
+      "sha256": "849576458fa2612455a48ac65c956342958fc6d5616d78d4df860211dd1a26d4"
+    },
+    {
+      "path": "Dockerfile",
+      "bytes": 772,
+      "sha256": "b1516e5ecbca32c7e37f315b546414b9ed1526ff6b726af05b1650739d8f41d8"
+    },
+    {
+      "path": "README.md",
+      "bytes": 7351,
+      "sha256": "e72198d4d148ad590c379fe0739e1bd76ed3fe3b9a9618d97ee6c123a0d3336e"
+    },
+    {
+      "path": "SUBMISSION.md",
+      "bytes": 3890,
+      "sha256": "5e638aab7a623348290e5bff6d52359090255aeb43dbd3b9ab813876a4415345"
+    },
+    {
+      "path": "contracts/backend.ts",
+      "bytes": 6686,
+      "sha256": "0517cb089241da93d472c2a48be92bb0324a32f9f2fb99dac050cba363f99978"
+    },
+    {
+      "path": "deploy/assetlinks.json",
+      "bytes": 392,
+      "sha256": "811755cc06ce13de96d0edf8d9dce9950a4ac03be7b9bb28d46a9dca8d1efba8"
+    },
+    {
+      "path": "deploy/backend.env.example",
+      "bytes": 707,
+      "sha256": "b2f0a26d7f6f5bd5d799528f0c0ea4c9ad63313b08c3a75f16db1cdb7d226647"
+    },
+    {
+      "path": "deploy/bank-ai-acme.service",
+      "bytes": 454,
+      "sha256": "08030755e1408ba80900e5621cd7bfd929c2f90bbd0a17816873fee71e972e4a"
+    },
+    {
+      "path": "deploy/bank-ai-acme.timer",
+      "bytes": 209,
+      "sha256": "9a068e181e46c1decee1c204d3946e27cfdf59ac033fff97db025fd472aa1884"
+    },
+    {
+      "path": "deploy/compose.yaml",
+      "bytes": 1122,
+      "sha256": "26d048cd827107b2921afe4dc5112c524576384424452639dd18dcfbbe914ade"
+    },
+    {
+      "path": "deploy/dns-api.env.example",
+      "bytes": 143,
+      "sha256": "9999c6baf6cad9411945e13c1e2b2db7b8f0a0fbd71de46a32f66c31d1cab16d"
+    },
+    {
+      "path": "deploy/nginx.bootstrap.conf",
+      "bytes": 253,
+      "sha256": "1caaac6e995e5913a465ff6b0d8246b241ad273be17ae9cdd431d31b5d436541"
+    },
+    {
+      "path": "deploy/nginx.conf",
+      "bytes": 2507,
+      "sha256": "698ed302fcf397767c16c0a100d2e357309b23135e5aa796e14dc2ec5ee1f9f7"
+    },
+    {
+      "path": "docs/AIR_GAP_REVIEW.md",
+      "bytes": 17332,
+      "sha256": "cedcbea7e4775bc3b1eee67976f312e8bc9c8448b3a1d3b24ee36fedecef413a"
+    },
+    {
+      "path": "docs/ANDROID.md",
+      "bytes": 6912,
+      "sha256": "c0c2212491343f7325acbe033340e7668c3ff385d368e6f20d4ac6b15541aeb5"
+    },
+    {
+      "path": "docs/API.md",
+      "bytes": 12493,
+      "sha256": "3b6576b7bc6f468c16ab655fda58fb42d2f8f56c0d3a571e147a2a2697ad769b"
+    },
+    {
+      "path": "docs/AUTHENTICATOR.md",
+      "bytes": 7708,
+      "sha256": "78bd8749ce1d386116cef997ccda8a15aba42f058b7030bde3bee162220a71a1"
+    },
+    {
+      "path": "docs/DECISIONS.md",
+      "bytes": 20108,
+      "sha256": "e06353270bc86511302f2148d806e4c6b12e2db81aa5c2e9c59f38c3952899cf"
+    },
+    {
+      "path": "docs/DEPLOYMENT.md",
+      "bytes": 14086,
+      "sha256": "8b72ca4c7f2fd38372abf73f4b1c1b5a0f71b004d259538a541a095c51ca5941"
+    },
+    {
+      "path": "docs/DESIGN.md",
+      "bytes": 16741,
+      "sha256": "9141a13dfa9260a3e8913f1def85d0ff6526e2cb84faec7a0b324e27cc4cffcb"
+    },
+    {
+      "path": "docs/FRONTEND_HANDOFF.md",
+      "bytes": 9450,
+      "sha256": "1130035b9035a3cce6307248ed56d7c09f7f60b554a09c9623cb4e667faf9047"
+    },
+    {
+      "path": "docs/HANDOFF.md",
+      "bytes": 46962,
+      "sha256": "211f17bb0e6fae66192a60f6a978e14a9905b83be2a344fcda95a1a621535a88"
+    },
+    {
+      "path": "docs/PI_INTEGRATION.md",
+      "bytes": 8734,
+      "sha256": "c9aefd9802c006af1a37590c7a8508c44368c039832375128aba31880e591e78"
+    },
+    {
+      "path": "docs/REQUIREMENTS.md",
+      "bytes": 11765,
+      "sha256": "a0472b8ff51cbc328182b2173f77d74ff72d3861a5e26c7e8eb495cdd5b2a522"
+    },
+    {
+      "path": "docs/SECURITY.md",
+      "bytes": 7171,
+      "sha256": "bce04da377697feda6d93233642116a6868cb4f8d4c0180064886de6e7679d6b"
+    },
+    {
+      "path": "frontend/.env.example",
+      "bytes": 209,
+      "sha256": "715e369ba6a33038ada72632c92cef3ad24e93cdb85026f61260a90a3f21bd64"
+    },
+    {
+      "path": "frontend/README.md",
+      "bytes": 5907,
+      "sha256": "0f200f53c6169daddfc89430e1769719ea73fd9f87cdd0adb491a14c0418bf64"
+    },
+    {
+      "path": "frontend/android/.gitignore",
+      "bytes": 1824,
+      "sha256": "065e4a92a240fe11a0ea230491ad9dabef143f5fd5a3e6884ad6f0395666a971"
+    },
+    {
+      "path": "frontend/android/app/.gitignore",
+      "bytes": 26,
+      "sha256": "99c54e51ee601a60fbde8016b2cbf717483bc2e92773be86c9247d02a7fa6ea4"
+    },
+    {
+      "path": "frontend/android/app/build.gradle",
+      "bytes": 2731,
+      "sha256": "663cc1fb85175be8d314b24a66f2ad551f7b120b79fabc58dc460ea361b69315"
+    },
+    {
+      "path": "frontend/android/app/capacitor.build.gradle",
+      "bytes": 370,
+      "sha256": "7051cadfdbc532197d2cfd4f8a11684d81367f23cf7952e5a208f7b6aa0833e0"
+    },
+    {
+      "path": "frontend/android/app/proguard-rules.pro",
+      "bytes": 751,
+      "sha256": "1cf8c57e8f79c250b0af9c1a5a4edad71a5c348a79ab70243b6bae086c150ad2"
+    },
+    {
+      "path": "frontend/android/app/src/androidTest/java/com/getcapacitor/myapp/ExampleInstrumentedTest.java",
+      "bytes": 774,
+      "sha256": "ff50b4c110a7434312f9af54171f9e8523b015836f707c9b387b76d4c38a97f8"
+    },
+    {
+      "path": "frontend/android/app/src/debug/res/xml/network_security_config.xml",
+      "bytes": 290,
+      "sha256": "c443369c66ed3b947c408d1a3368e7391c01e761f07a75a14db3584e775be96b"
+    },
+    {
+      "path": "frontend/android/app/src/main/AndroidManifest.xml",
+      "bytes": 1706,
+      "sha256": "c27e99d23c5ede4dbb45eb45e42a77b245dd721eb9ec8e38bdb826d41b721923"
+    },
+    {
+      "path": "frontend/android/app/src/main/java/com/bankai/assistant/BankPasskeysPlugin.java",
+      "bytes": 5384,
+      "sha256": "26cece9b17b1aedad11471d2ec1ee9eff1f2b12004af022ac2db6d303b1fd3e8"
+    },
+    {
+      "path": "frontend/android/app/src/main/java/com/bankai/assistant/MainActivity.java",
+      "bytes": 777,
+      "sha256": "60810e9ed50dc56891e6fb02be25892c5085b6e4254b516e2580eee6d1611b1e"
+    },
+    {
+      "path": "frontend/android/app/src/main/res/drawable-land-hdpi/splash.png",
+      "bytes": 7705,
+      "sha256": "08cc34ad7713fe7ed58bceaa37b2387b670c53cd60264b4bd6442db3098e75dc"
+    },
+    {
+      "path": "frontend/android/app/src/main/res/drawable-land-mdpi/splash.png",
+      "bytes": 4040,
+      "sha256": "5cf98b4451bd99b20df26f9e608a46946118be6b0ae90762f9ca1786a30c76ff"
+    },
+    {
+      "path": "frontend/android/app/src/main/res/drawable-land-xhdpi/splash.png",
+      "bytes": 9251,
+      "sha256": "22f87e1e3bc89aa01a7dbc39c9a4db058cd0bf4ad3fe9f55712bf69eb997f4bf"
+    },
+    {
+      "path": "frontend/android/app/src/main/res/drawable-land-xxhdpi/splash.png",
+      "bytes": 13984,
+      "sha256": "42aa26392546fcdee1b8d3ac6d4b41bfcceb41dc6a4f3a3c30c24a8a8f4db862"
+    },
+    {
+      "path": "frontend/android/app/src/main/res/drawable-land-xxxhdpi/splash.png",
+      "bytes": 17683,
+      "sha256": "60393ce8636fd263e4e1fea3fd4ab2de948c6295e898fda9b50ac4e5283be809"
+    },
+    {
+      "path": "frontend/android/app/src/main/res/drawable-port-hdpi/splash.png",
+      "bytes": 7934,
+      "sha256": "c5015f4ba3628392b538386c5e210f0b94f352a3160adab934fd0311972137ca"
+    },
+    {
+      "path": "frontend/android/app/src/main/res/drawable-port-mdpi/splash.png",
+      "bytes": 4096,
+      "sha256": "07fa579e1c83e04ba7f9cbcbfcf41b68e15fe3638f2c44a04e58b809103e6b69"
+    },
+    {
+      "path": "frontend/android/app/src/main/res/drawable-port-xhdpi/splash.png",
+      "bytes": 9875,
+      "sha256": "b73049cb37fe76d6c11b87a796766bf6af0c85483b31eb6a921657b0d764a4b9"
+    },
+    {
+      "path": "frontend/android/app/src/main/res/drawable-port-xxhdpi/splash.png",
+      "bytes": 13346,
+      "sha256": "0c7f1212f25b7b90e9a6e1d320013e4ff3d3e03e634cbb07b7b7981cac51627f"
+    },
+    {
+      "path": "frontend/android/app/src/main/res/drawable-port-xxxhdpi/splash.png",
+      "bytes": 17489,
+      "sha256": "3db071a03b2f8ffe0dfd4170fc59842d53cd15bba5e88af59401d58efabf7827"
+    },
+    {
+      "path": "frontend/android/app/src/main/res/drawable-v24/ic_launcher_foreground.xml",
+      "bytes": 1880,
+      "sha256": "a8514094f754b099d3e55ce1d6e0b2de79db418b2eeacb0fc2a6bb0bfadef221"
+    },
+    {
+      "path": "frontend/android/app/src/main/res/drawable/bank_ai_icon.xml",
+      "bytes": 422,
+      "sha256": "cbb4b7d023e8ee06da289ae1b44dd04a37a55c887794075efeb89e187cf1b165"
+    },
+    {
+      "path": "frontend/android/app/src/main/res/drawable/ic_launcher_background.xml",
+      "bytes": 5606,
+      "sha256": "718ba51adf166bb55c3e9936bb8199a0148457f7f0191aaa2f37a94f3159d6ec"
+    },
+    {
+      "path": "frontend/android/app/src/main/res/drawable/splash.png",
+      "bytes": 4040,
+      "sha256": "5cf98b4451bd99b20df26f9e608a46946118be6b0ae90762f9ca1786a30c76ff"
+    },
+    {
+      "path": "frontend/android/app/src/main/res/layout/activity_main.xml",
+      "bytes": 535,
+      "sha256": "5d770feb791313b947020cbfc57e5c733c556dac5e9e49261a1190e527073253"
+    },
+    {
+      "path": "frontend/android/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml",
+      "bytes": 258,
+      "sha256": "2eeb45d732c942f50c39a24d33f714dab02285977730ec8911cffde814ba77ec"
+    },
+    {
+      "path": "frontend/android/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml",
+      "bytes": 258,
+      "sha256": "2eeb45d732c942f50c39a24d33f714dab02285977730ec8911cffde814ba77ec"
+    },
+    {
+      "path": "frontend/android/app/src/main/res/mipmap-hdpi/ic_launcher.png",
+      "bytes": 2786,
+      "sha256": "72b71c3581ca3b5a23b1c168d69b9d855b3f184fa079902a01f088eb4f0607d5"
+    },
+    {
+      "path": "frontend/android/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png",
+      "bytes": 3450,
+      "sha256": "32baa10d2632a4417454a579f992bd640e0a3cec79321423559b2c9940de58a9"
+    },
+    {
+      "path": "frontend/android/app/src/main/res/mipmap-hdpi/ic_launcher_round.png",
+      "bytes": 4341,
+      "sha256": "bfcc1b0fa931b14bb241372c76ab4f04374b67d02363c98d9cb12edfdacdf5f3"
+    },
+    {
+      "path": "frontend/android/app/src/main/res/mipmap-mdpi/ic_launcher.png",
+      "bytes": 1869,
+      "sha256": "27ed3603010ebc278f64f8645741ab132ff517abb5308eb9df6c8e42a48956b2"
+    },
+    {
+      "path": "frontend/android/app/src/main/res/mipmap-mdpi/ic_launcher_foreground.png",
+      "bytes": 2110,
+      "sha256": "58e78a618778926b1f6d9472a6468de878de8530970934e94aab5ba4ba08cc00"
+    },
+    {
+      "path": "frontend/android/app/src/main/res/mipmap-mdpi/ic_launcher_round.png",
+      "bytes": 2725,
+      "sha256": "0166fc333074c373fbd0ce6b5defd71552166165ac778121ca9c9dff6b83f0fc"
+    },
+    {
+      "path": "frontend/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png",
+      "bytes": 3981,
+      "sha256": "d35dbfff175b83c13ef59cf924abfc810f7b6a158595d7417c5498ea8c7c7ed1"
+    },
+    {
+      "path": "frontend/android/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.png",
+      "bytes": 5036,
+      "sha256": "6f88083b8166cc559102f7044688de7525287632ebe09ac45d001ac8bf4b3eae"
+    },
+    {
+      "path": "frontend/android/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png",
+      "bytes": 6593,
+      "sha256": "40911a00922868686854a4804b93fd6e56b503664696de03f450bff690affb6d"
+    },
+    {
+      "path": "frontend/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png",
+      "bytes": 6644,
+      "sha256": "ed346eb1e3f0280f15709393705899b3ff55c20b88f4e0308006b3c33cf5fe14"
+    },
+    {
+      "path": "frontend/android/app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.png",
+      "bytes": 9793,
+      "sha256": "4a82bc1e9923576275869998925ce0ae021a79aa18b24a0dd87ad6b61ca85053"
+    },
+    {
+      "path": "frontend/android/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png",
+      "bytes": 10455,
+      "sha256": "1ee4cd9ff371dcb2e3938097e434f6fb8731688ed7165e61fc63693ad5b2f455"
+    },
+    {
+      "path": "frontend/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+      "bytes": 9441,
+      "sha256": "87cb2f2ffe992652bb4fa768c73719a37b5852ab17fbf8e170e888f7a42b0761"
+    },
+    {
+      "path": "frontend/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png",
+      "bytes": 15529,
+      "sha256": "bd24fd383253bf8d43f0a81f11c071d76d1d555114376dd647cd9fb38fa0a9da"
+    },
+    {
+      "path": "frontend/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png",
+      "bytes": 15916,
+      "sha256": "ab93096331e7cd8ec379f73f1e9adcaaa9ee1115c9f4ff10411a811fb9700174"
+    },
+    {
+      "path": "frontend/android/app/src/main/res/values/ic_launcher_background.xml",
+      "bytes": 121,
+      "sha256": "e0e243bc508af446c1c9ca789b32b5dc08dbe54c58e76343ac0b75b8f3e6ab5c"
+    },
+    {
+      "path": "frontend/android/app/src/main/res/values/strings.xml",
+      "bytes": 314,
+      "sha256": "c91a982c5f3f845cea1bb751ccc763d61f677c60e3651bc0c54f59a8505ef260"
+    },
+    {
+      "path": "frontend/android/app/src/main/res/values/styles.xml",
+      "bytes": 823,
+      "sha256": "18ebba36575e9461347ee67361b23caf095f158ee85dbefe1b83a4669ba5bd6c"
+    },
+    {
+      "path": "frontend/android/app/src/main/res/xml/file_paths.xml",
+      "bytes": 213,
+      "sha256": "a46ed43ef65c90cb6778f4581decf3556e3f0055aad8f36d69dae16f9a0e99aa"
+    },
+    {
+      "path": "frontend/android/app/src/main/res/xml/network_security_config.xml",
+      "bytes": 146,
+      "sha256": "dea35ebed76536c24c13f74036f02dc874f944147cb3a49c2ad0550f71e3e0c7"
+    },
+    {
+      "path": "frontend/android/app/src/test/java/com/getcapacitor/myapp/ExampleUnitTest.java",
+      "bytes": 402,
+      "sha256": "d4045ae8fac1f0807e6b24eb34e68409a9a235df9d1a3f896fb8c9a49424363d"
+    },
+    {
+      "path": "frontend/android/build.gradle",
+      "bytes": 637,
+      "sha256": "46ade7db7afeb8049ccea59fce83095dca736ceb8c9acd79cc944e988c3357d9"
+    },
+    {
+      "path": "frontend/android/capacitor.settings.gradle",
+      "bytes": 273,
+      "sha256": "26b3d4d5ae171b288784a40b825f2a84e5319ee1a665dfb2ff375fca0a629606"
+    },
+    {
+      "path": "frontend/android/gradle.properties",
+      "bytes": 987,
+      "sha256": "3bab15c5b8bc4c2f4b6cf525497d15ad4abca53a460e6dd2eb0f0135817d31e6"
+    },
+    {
+      "path": "frontend/android/gradle/wrapper/gradle-wrapper.jar",
+      "bytes": 43764,
+      "sha256": "7d3a4ac4de1c32b59bc6a4eb8ecb8e612ccd0cf1ae1e99f66902da64df296172"
+    },
+    {
+      "path": "frontend/android/gradle/wrapper/gradle-wrapper.properties",
+      "bytes": 253,
+      "sha256": "9a479a85aa879bb55284fc16d0de5b81a745c3854f4e2d88c42e7debaf007435"
+    },
+    {
+      "path": "frontend/android/gradlew",
+      "bytes": 8733,
+      "sha256": "b187b4c52e749f5760afdd6fadc31b2a98ad35fb249bf0dff03b72650f320409"
+    },
+    {
+      "path": "frontend/android/gradlew.bat",
+      "bytes": 2937,
+      "sha256": "1d297e00bd21de3ace22b4d7f2de1f9dfa858883d66bbf7c1ccbecccec8f4f3b"
+    },
+    {
+      "path": "frontend/android/settings.gradle",
+      "bytes": 208,
+      "sha256": "6ce098d15ebd69b44c4ecd786bca1bdc366340d2459b2af4d7bb0ab317aa9669"
+    },
+    {
+      "path": "frontend/android/variables.gradle",
+      "bytes": 499,
+      "sha256": "b056a1e8336a2b1cd8c14cf9f20558c01f1ae0b3d4369f267fdd14327c8df89c"
+    },
+    {
+      "path": "frontend/capacitor.config.ts",
+      "bytes": 383,
+      "sha256": "102c0cdf628ace8485e6b0ff6438f60050d034f4cc6a05f0c8862f4a6c76006a"
+    },
+    {
+      "path": "frontend/index.html",
+      "bytes": 572,
+      "sha256": "10112247e688cab258333f1910f8e7933fbf8b1381b1524f7053309884d510b0"
+    },
+    {
+      "path": "frontend/package.json",
+      "bytes": 905,
+      "sha256": "a23c40c699f5f79ccfd8f52505683b68e9156a2fe577c01bc7c73a8e2c1331d4"
+    },
+    {
+      "path": "frontend/pnpm-lock.yaml",
+      "bytes": 60217,
+      "sha256": "f36eafaede39bf578f52da95fd91566aecbe4e17e1777099e52a34323252edd3"
+    },
+    {
+      "path": "frontend/pnpm-workspace.yaml",
+      "bytes": 128,
+      "sha256": "281ba2c8786e645e8f490ba9985365116f9aeb352fe43c25386a2d908c8d7658"
+    },
+    {
+      "path": "frontend/scripts/build-android.mjs",
+      "bytes": 2731,
+      "sha256": "6a71036e3098105b18cb57e805ff18eaab79455916f367af38418a634a08ba27"
+    },
+    {
+      "path": "frontend/src/App.tsx",
+      "bytes": 7222,
+      "sha256": "1e0cc1173fa93d1e64c851139c5230106885c6c052243697c424b329f33a00b0"
+    },
+    {
+      "path": "frontend/src/api/client.ts",
+      "bytes": 13024,
+      "sha256": "06d6e2a9b60bb234a78eada8d2c473ad48e3e8f0434be0ce2d87152568ea3588"
+    },
+    {
+      "path": "frontend/src/api/types.ts",
+      "bytes": 991,
+      "sha256": "d5568e89b776a0ee1839207714dd8460420eb9cf9f0398f9c8497da682a068dd"
+    },
+    {
+      "path": "frontend/src/components/ActionCard.tsx",
+      "bytes": 14910,
+      "sha256": "c64dd7e659c6ae8c21b97c56b963e23f8c006a32ac9ab086180489eedc860760"
+    },
+    {
+      "path": "frontend/src/components/BillReportView.tsx",
+      "bytes": 5596,
+      "sha256": "67cf98c19eec92938b447c6a1e14194e021c13d04cdc7a15d2983d7dabca84ca"
+    },
+    {
+      "path": "frontend/src/components/ConversationHistory.tsx",
+      "bytes": 3918,
+      "sha256": "eadd8e31e7b8999bad217e9e90878c0adb172ec7217122bc398bde98841aebd7"
+    },
+    {
+      "path": "frontend/src/components/PaymentVerification.tsx",
+      "bytes": 10070,
+      "sha256": "7c4dff4be5e905126ddbd1abc3e5b4f960be97d09e4ce58bd7c13e60bec5ae02"
+    },
+    {
+      "path": "frontend/src/components/Receipt.tsx",
+      "bytes": 1457,
+      "sha256": "6f80998217d26eb1dd7de17d20fa2a92b554f47450b7c9e09ae1b84250737561"
+    },
+    {
+      "path": "frontend/src/components/SecurityOperation.tsx",
+      "bytes": 15139,
+      "sha256": "31df268c9b6ccacc57a83d9a3ed028c838a25b346437ad6ed5231fa9a1fa56d6"
+    },
+    {
+      "path": "frontend/src/components/SubscriptionTable.tsx",
+      "bytes": 5932,
+      "sha256": "076c4ba5203dd8f482e0e089916f6d72237a07541c4bb2db1e465e221064932e"
+    },
+    {
+      "path": "frontend/src/components/TransactionRow.tsx",
+      "bytes": 2355,
+      "sha256": "3b673b7550a7d36bf553ae34ba6ca9ef13055cb8f82e15161429a83ca6adaba6"
+    },
+    {
+      "path": "frontend/src/components/ui.tsx",
+      "bytes": 5715,
+      "sha256": "629eda322454dd84e0833120319e03035a3d1a9985a3903b5cce1f7bca5aca09"
+    },
+    {
+      "path": "frontend/src/lib/conversation.ts",
+      "bytes": 1841,
+      "sha256": "d9b6e45a12e9f8a1cef8af553688a55ffb973670f7b31c8e421df88bbf838cd9"
+    },
+    {
+      "path": "frontend/src/lib/errors.ts",
+      "bytes": 4176,
+      "sha256": "e97d9a850bb2edae6e15292028a52902ffd29a7e509b07485e7b9f7c96855a22"
+    },
+    {
+      "path": "frontend/src/lib/format.ts",
+      "bytes": 2128,
+      "sha256": "3781dc7d86dc87c1d54f9d3f2ba8fbf079dda6d187b903a917aaf74991388e31"
+    },
+    {
+      "path": "frontend/src/lib/ids.ts",
+      "bytes": 173,
+      "sha256": "1d34d036664c90c9afc31e07ab1c5cef7853767dd14340d61f1a6d83cca44718"
+    },
+    {
+      "path": "frontend/src/lib/money.ts",
+      "bytes": 1590,
+      "sha256": "7071b34407e51155d12ea44c4404660bad9c72802e8632f4c90e80d7a05c5f5f"
+    },
+    {
+      "path": "frontend/src/lib/useLoad.ts",
+      "bytes": 1127,
+      "sha256": "fe3e54760cf55619bdf725561dd7ebf60e2274e7243898ceb5b54b1dac847107"
+    },
+    {
+      "path": "frontend/src/main.tsx",
+      "bytes": 236,
+      "sha256": "a6bcae9c4f04d6ff36406b2966379834342b41b08b83ba7bd0334712d6cf87f0"
+    },
+    {
+      "path": "frontend/src/platform/passkeys.ts",
+      "bytes": 2440,
+      "sha256": "387298cc8c63882aa522e578f68689293062c143e5d30509715c8e93125dad3b"
+    },
+    {
+      "path": "frontend/src/platform/transport.ts",
+      "bytes": 1021,
+      "sha256": "7a3d7a9eb9b65c0991b77741e9fa55c4d47fa140dffa7430a9bdcdc93f4f3f8c"
+    },
+    {
+      "path": "frontend/src/router.ts",
+      "bytes": 837,
+      "sha256": "47f2a29dcfbe046b4a991dce8a9c5e4281600fd38cd6bb750de5fef0dfc9ee59"
+    },
+    {
+      "path": "frontend/src/screens/Activity.tsx",
+      "bytes": 2469,
+      "sha256": "27711944ee2d3eb22110fb1bfe39ef7daa755a2a9fd57025a81f8eb4b8fdbe59"
+    },
+    {
+      "path": "frontend/src/screens/Assistant.tsx",
+      "bytes": 26357,
+      "sha256": "dd733640aa9f0c8cd0494231d0308700d0a656add33e4b5bb19c9e5bd7f2d371"
+    },
+    {
+      "path": "frontend/src/screens/Bills.tsx",
+      "bytes": 2066,
+      "sha256": "c72540775f926f2d1e6a4533b097ebb928b301133efb52ee0b35092f4c5f5875"
+    },
+    {
+      "path": "frontend/src/screens/Overview.tsx",
+      "bytes": 4801,
+      "sha256": "06eae11017fbedc5a9f03218cc83cc4f978266e34f022913f9b8f31039c85c42"
+    },
+    {
+      "path": "frontend/src/screens/Payments.tsx",
+      "bytes": 9266,
+      "sha256": "2016df129794d72ccea9009510b1217b3a5bec3fde48093409cfd968cf0910a7"
+    },
+    {
+      "path": "frontend/src/screens/Security.tsx",
+      "bytes": 5656,
+      "sha256": "fffa217b019c03422273451fa01e457b3d423d9ae5beae6e0ed9f93b2cf81fdb"
+    },
+    {
+      "path": "frontend/src/screens/SignIn.tsx",
+      "bytes": 2973,
+      "sha256": "156621fb395eba27038c3fdaf35515a246fc60c0b5f9fbf3cf3a88245a2f0fa1"
+    },
+    {
+      "path": "frontend/src/screens/Subscriptions.tsx",
+      "bytes": 4504,
+      "sha256": "8c3cf05cc07465abd2153d3a60fbfa4cafc88af5bfeb047fa4c62aeb8e5e5fc4"
+    },
+    {
+      "path": "frontend/src/screens/Transactions.tsx",
+      "bytes": 2919,
+      "sha256": "df7c29486eee9c5a148a6c32c2e052b317bd462b356de7d43fca0186623a768f"
+    },
+    {
+      "path": "frontend/src/session.tsx",
+      "bytes": 1601,
+      "sha256": "f336fc18178faec33d60fa77df7ba627d82e0740ea76380df9e85aaa3ab902a5"
+    },
+    {
+      "path": "frontend/src/styles.css",
+      "bytes": 23687,
+      "sha256": "e48a6369d20c4bee830e788438ad6ee9f51cfc11005490bdbc652ff8dfeceaad"
+    },
+    {
+      "path": "frontend/tests/client.test.ts",
+      "bytes": 5424,
+      "sha256": "292c263266480db0c2204a6894ee7e6acf8d43a95c715672499b6719c9668bdd"
+    },
+    {
+      "path": "frontend/tests/conversation.test.ts",
+      "bytes": 2369,
+      "sha256": "8bfb38103ec6e9d1f481a79508c6743348fcf3a405855e8b5d73cfd37253298b"
+    },
+    {
+      "path": "frontend/tests/money.test.ts",
+      "bytes": 1709,
+      "sha256": "dcd4187497fb6a9d540a30b1d2a4be1921d2d1b42f72887b8b81966decbb5229"
+    },
+    {
+      "path": "frontend/tests/platform.test.ts",
+      "bytes": 4677,
+      "sha256": "bc0c4003e2e5bd2d847d2db41580016fac9fdaafe1417cc355470d35f78e524c"
+    },
+    {
+      "path": "frontend/tsconfig.json",
+      "bytes": 516,
+      "sha256": "38097b5deced489c34a474fd19cf3b66ef6c7a6aacb8870b1274006c6e04bb72"
+    },
+    {
+      "path": "frontend/vite.config.ts",
+      "bytes": 1339,
+      "sha256": "91e81898e6a4e8cb68486f1c35665b93789d731efc68e780f3c4028596b1cdb8"
+    },
+    {
+      "path": "package.json",
+      "bytes": 1004,
+      "sha256": "32c917c8b37bbca26309e82121e069bd6d88f6cb26bbd767f20b5ebd7b146f0c"
+    },
+    {
+      "path": "pnpm-lock.yaml",
+      "bytes": 67284,
+      "sha256": "cd76431234bfcb765a0da9e728260ef22b6d19e8cfede5fb6d859e9cd0056e08"
+    },
+    {
+      "path": "pnpm-workspace.yaml",
+      "bytes": 217,
+      "sha256": "5c72c6f809fdf6cce56599aa6497fa55582078e03114a13ad8ff6905df337846"
+    },
+    {
+      "path": "scripts/cloud-smoke.mjs",
+      "bytes": 5716,
+      "sha256": "5f29854048d0864f284242b65cf11a23476ab8016307b32a83c6410a598cf6ba"
+    },
+    {
+      "path": "scripts/setup-demo.mjs",
+      "bytes": 873,
+      "sha256": "e56fedd1edfab0f5655420eed97ad87f80b0ec14e41950b7b496a1e91abd15be"
+    },
+    {
+      "path": "scripts/start-android-backend.mjs",
+      "bytes": 174,
+      "sha256": "91a6b1dd00425e1bc669c972b1bc460d46782a37631a027f08bbf2ad5069e4e9"
+    },
+    {
+      "path": "src/agent.ts",
+      "bytes": 23196,
+      "sha256": "009dc8590f3d6195a0d8ec85e49c6040436a4dbcdeb087224a456beec8a0993b"
+    },
+    {
+      "path": "src/app.ts",
+      "bytes": 27677,
+      "sha256": "0d4b38d17285b99dc435d59beba3842fa24187e958aed73649a242b1cf597714"
+    },
+    {
+      "path": "src/authenticator.ts",
+      "bytes": 14130,
+      "sha256": "c90dad3eb00a8d81f861a239a471e873c4375df8b8f8709e4db5911b88acc5f0"
+    },
+    {
+      "path": "src/bank.ts",
+      "bytes": 20903,
+      "sha256": "0377afb1467eaca8b9c2ab0e7df685cd499cdd6f62736515824eb6ea789cdde5"
+    },
+    {
+      "path": "src/config.ts",
+      "bytes": 4058,
+      "sha256": "38eb29b5713b7bc7df555b5fe4eeb8cbc59a72c4899f75a673d9b39b674c2a9c"
+    },
+    {
+      "path": "src/crypto.ts",
+      "bytes": 1111,
+      "sha256": "134f2ce6489e5c66614471112dffa93397dc9472245c801807459720a678a9f8"
+    },
+    {
+      "path": "src/factor-proofs.ts",
+      "bytes": 7862,
+      "sha256": "59a39a2b3f318d0974d1527cfde2533f79a7af6ecae395a63d05b37116398f4a"
+    },
+    {
+      "path": "src/security.ts",
+      "bytes": 22190,
+      "sha256": "bb0bd2deaedbaf39b55a56d12108f940acb5cced7c9fcb3104c80c3d3e1e06ab"
+    },
+    {
+      "path": "src/seed.ts",
+      "bytes": 2381,
+      "sha256": "aebcdd9b4d623e71f384579b2d77df5559fcd88319f4bef1eedbaac1826fa2ca"
+    },
+    {
+      "path": "src/server.ts",
+      "bytes": 490,
+      "sha256": "48095dc709488563ff2ac8da462fa18c563147069de31d52621dcd7b03ed8b1f"
+    },
+    {
+      "path": "src/store.ts",
+      "bytes": 3134,
+      "sha256": "8c8b9cc8636b8b4f5704c3543e8a85d79ffd07fd1e59460e77e56879d170c8cd"
+    },
+    {
+      "path": "src/types.ts",
+      "bytes": 4647,
+      "sha256": "118013653a4ffbc8acfead0c7cc6b3b5f2999303bd4b30cc00f1b26f1a8d21ce"
+    },
+    {
+      "path": "tests/agent.test.ts",
+      "bytes": 20062,
+      "sha256": "6aec6265892ce4eef38fc7f7235002db9798d1153f0119840d2eebc9ac467b82"
+    },
+    {
+      "path": "tests/authenticator.test.ts",
+      "bytes": 21107,
+      "sha256": "257fee8a4d91ccdc56d4740ed230f2b779573c74fa9a6934dd1a50b3c3101ca0"
+    },
+    {
+      "path": "tests/backend.test.ts",
+      "bytes": 19598,
+      "sha256": "6a6cee9f5a0b3fe7b0f472ab2c8af01a31f6c6fb5615a7f25338bd326700171a"
+    },
+    {
+      "path": "tests/helpers.ts",
+      "bytes": 5820,
+      "sha256": "865f661ff6abea9abd25f0f4d15197f94abe765d0fcf7ee35d8810d82ab56e14"
+    },
+    {
+      "path": "tests/security-extra.test.ts",
+      "bytes": 11333,
+      "sha256": "7efe1997a8572027cd306a63f05e4e3df434fe76e797480b3a6873d9ae7a619d"
+    },
+    {
+      "path": "tsconfig.check.json",
+      "bytes": 160,
+      "sha256": "f588c56a8f7f4578e00e34d6e82dd06cd5d3507ebff6a8031f94ab97d71940fe"
+    },
+    {
+      "path": "tsconfig.json",
+      "bytes": 326,
+      "sha256": "6a5cfca2e35bd8b8153d8312650b2ae37a1e061bdb004bc4bed5e02a7d46be23"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.pem
+*.key
+*.jks
+*.keystore
+deploy/backend.env
+deploy/dns-api.env
+deploy/data/
+deploy/acme/
+deploy/acme-dns/
+deploy/tls/
+deploy/web/
+deploy/challenges/
+
+# JavaScript / TypeScript dependencies and build output
+node_modules/
+dist/
+build/
+.next/
+.nuxt/
+
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+
+# Test output and logs
+coverage/
+htmlcov/
+.coverage
+*.log
+.data/
+.tools/
+artifacts/
+**/android/.gradle/
+**/android/local.properties
+**/android/app/build/
+**/android/capacitor-cordova-android-plugins/build/
+
+# Local editor / OS files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Personal agent settings
+.claude/settings.local.json
+CLAUDE.local.md

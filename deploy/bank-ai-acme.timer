@@ -1,0 +1,12 @@
+[Unit]
+Description=Check Bank AI DNS-01 domain TLS renewal hourly
+
+[Timer]
+OnBootSec=5min
+OnUnitActiveSec=1h
+RandomizedDelaySec=5min
+Persistent=true
+Unit=bank-ai-acme.service
+
+[Install]
+WantedBy=timers.target
